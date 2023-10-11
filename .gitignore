@@ -10,4 +10,5 @@
 /include/nitro.h
 /include/twl_hybrid.h
 
+convert_sdk.py
 /include/Game/old/
