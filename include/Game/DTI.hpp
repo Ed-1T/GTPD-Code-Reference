@@ -2,6 +2,8 @@
 
 #include "Common.hpp"
 
+class CnObject;
+
 class DTI {
 public:
 
@@ -10,7 +12,7 @@ public:
 	GTPD_FUNC DTI(const char* name, DTI* parent, u32 size, u32 tag, u32 flag);
 
 
-	GTPD_FUNC virtual void* construct() const;
+	GTPD_FUNC virtual CnObject* construct() const;
 
 
 	GTPD_FUNC const char* getName() const;
@@ -56,12 +58,9 @@ public:
 	NTR_NOINLINE GenericDTI(const char* name, DTI* parent, u32 size, u32 tag, u32 flag) :
 		DTI(name, parent, size, tag, flag) {}
 
-/* GCC_PUSH
-GCC_IGNORE("-Wall") */
-	virtual void* construct() const override {
+	virtual T* construct() const override {
 		return new T();
 	}
-/* GCC_POP */
 
 };
 
