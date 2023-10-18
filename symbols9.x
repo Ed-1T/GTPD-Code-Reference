@@ -67,6 +67,25 @@
 
 	_ZTV9cFileSpan                              = 0x020A45DC - 8; /* vtable for cFileSpan */
 
+/* cCPACFile */
+	_ZN9cCPACFileC2EP5cFile							= 0x0201E580 + 1; /* cCPACFile::cCPACFile(cFile*) */
+	_ZNK9cCPACFile11getFileSizeEv                   = 0x0200CB5C + 1; /* cCPACFile::getFileSize() const */
+	_ZNK9cCPACFile15isFileLocalizedEv               = 0x0200CF3C + 1; /* cCPACFile::isFileLocalized() const */
+	_ZN9cCPACFile8openFileEmm                       = 0x0201E664 + 1; /* cCPACFile::openFile(unsigned long, unsigned long) */
+	_ZN9cCPACFile8readFileEmmPv                     = 0x0201E7F8 + 1; /* cCPACFile::readFile(unsigned long, unsigned long, void*) */
+	_ZN9cCPACFile8readFileEmmbP14cAllocatorBase     = 0x0201E888 + 1; /* cCPACFile::readFile(unsigned long, unsigned long, bool, cAllocatorBase*) */
+	_ZN9cCPACFile12setFileCountEmm                  = 0x0201E978 + 1; /* cCPACFile::setFileCount(unsigned long, unsigned long) */
+	_ZN9cCPACFile11getFileSizeEmm                   = 0x0201E97C + 1; /* cCPACFile::getFileSize(unsigned long, unsigned long) */
+
+/* cCPAC */
+	_ZN5cCPACC2Ev                                   = 0x0202EF88 + 1; /* cCPAC::cCPAC() */
+	_ZN5cCPAC11getInstanceEv                        = 0x0200883C + 1; /* cCPAC::getInstance() */
+	_ZNK5cCPAC9getCPAC2DEv                          = 0x02008824 + 1; /* cCPAC::getCPAC2D() const */
+	_ZNK5cCPAC9getCPAC3DEv                          = 0x0201A4E8 + 1; /* cCPAC::getCPAC3D() const */
+	_ZN5cCPAC12loadPackagesEb                       = 0x0202EF90 + 1; /* cCPAC::loadPackages(bool) */
+
+	_ZZN5cCPAC11getInstanceEvE10myInstance          = 0x020B1920; /* cCPAC::getInstance()::myInstance */
+
 /* DTI */
 	_ZN3DTIC2Ev														= 0x0201edac + 1; /* DTI::DTI() */
 	_ZN3DTIC2EPKcPS_mmm                                             = 0x0201edc0 + 1; /* DTI::DTI(char const*, DTI*, unsigned long, unsigned long, unsigned long) */
@@ -269,6 +288,9 @@
 /* Nitro System								*/
 
 /* NITRO SDK (base library)					*/
+
+DC_StoreRange = 0x02074860;
+MI_UncompressLZ8 = 0x02073174;
 
 /* MSL (builtin library)					*/
 
