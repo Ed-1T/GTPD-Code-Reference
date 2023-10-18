@@ -22,4 +22,8 @@ public: \
 // Mark these functions as Thumb
 GTPD_FUNC void* operator new(unsigned int);
 
+GTPD_FUNC void* operator new[](unsigned int);
+
 GTPD_FUNC void operator delete(void*, unsigned int);
+
+GTPD_FUNC void operator delete[](void*);

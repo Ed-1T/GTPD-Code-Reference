@@ -18,7 +18,10 @@
 /* ARM9 Section 0 (CRT0 + MAIN)				*/
 
 	_Znwj   = 0x02031254 + 1; /* operator new(unsigned int) */
+	_Znaj   = 0x02031288 + 1; /* operator new[](unsigned int) */
 	_ZdlPvj = 0x02031270 + 1; /* operator delete(void*, unsigned int) */
+	_ZdaPv  = 0x020312a4 + 1; /* operator delete[](void*) */
+
 
 /* DTI */
 	_ZN3DTIC2Ev														= 0x0201edac + 1; /* DTI::DTI() */
@@ -144,6 +147,71 @@
 	_ZN17cDSProcessManager17getProcessManagerEm						= 0x0201123C + 1; /* cDSProcessManager::getProcessManager(unsigned long) */
 
 	_ZZN17cDSProcessManager11getInstanceEvE10myInstance				= 0x020B8AD4; /* cDSProcessManager::getInstance()::myInstance */
+
+/* cCellProxy */
+	_ZN10cCellProxy14releaseTextureEv = 0x0200B060 + 1;
+	_ZN10cCellProxy14releasePaletteEv = 0x0200B074 + 1;
+
+/* cCellPrim */
+	_ZN9cCellPrimD0Ev													= 0x0200B1C0 + 1; /* cCellPrim::~cCellPrim() */
+	_ZN9cCellPrimD1Ev													= 0x0200B180 + 1; /* cCellPrim::~cCellPrim() */
+	_ZN9cCellPrimD2Ev													= 0x0200B180 + 1; /* cCellPrim::~cCellPrim() */
+	_ZN9cCellPrimC1Ev													= 0x0200B154 + 1; /* cCellPrim::cCellPrim() */
+	_ZN9cCellPrimC2Ev													= 0x0200B154 + 1; /* cCellPrim::cCellPrim() */
+
+	_ZTV9cCellPrim													= 0x020A2C9C - 8; /* vtable for cCellPrim */
+
+/* cCellAnim */
+	_ZN9cCellAnimD0Ev                                                   = 0x0200B4B8 + 1; /* cCellAnim::~cCellAnim() */
+	_ZN9cCellAnimD1Ev													= 0x0200B494 + 1; /* cCellAnim::~cCellAnim() */
+	_ZN9cCellAnimD2Ev													= 0x0200B494 + 1; /* cCellAnim::~cCellAnim() */
+	_ZN9cCellAnimC1Ev													= 0x0200B460 + 1; /* cCellAnim::cCellAnim() */
+	_ZN9cCellAnimC2Ev													= 0x0200B460 + 1; /* cCellAnim::cCellAnim() */
+	_ZNK9cCellAnim15registerMembersEPv                                  = 0x0200B864 + 1; /* cCellAnim::registerMembers(void*) const */
+	_ZNK9cCellAnim6getDTIEv                                             = 0x0200C948 + 1; /* cCellAnim::getDTI() const */
+	_ZN9cCellAnim5resetEv												= 0x0200B4E0 + 1; /* cCellAnim::reset() */
+	_ZN9cCellAnim16releaseAnimationEv                                   = 0x0200B504 + 1; /* cCellAnim::releaseAnimation() */
+	_ZN9cCellAnim9configureEhmm                                         = 0x0200B518 + 1; /* cCellAnim::configure(unsigned char, unsigned long, unsigned long) */
+	_ZN9cCellAnim4loadEmNS_9LoadFlagsE                                  = 0x0200B598 + 1; /* cCellAnim::load(unsigned long, cCellAnim::LoadFlags) */
+	_ZN9cCellAnim6updateEv                                              = 0x0200B7C0 + 1; /* cCellAnim::update() */
+	_ZN9cCellAnim6renderEv                                              = 0x0200B808 + 1; /* cCellAnim::render() */
+	_ZNK9cCellAnim8getSeqNoEv                                           = 0x0200BA28 + 1; /* cCellAnim::getSeqNo() const */
+	_ZNK9cCellAnim12getPaletteIDEv                                      = 0x0200BA2C + 1; /* cCellAnim::getPaletteID() const */
+	_ZNK9cCellAnim14getPaletteSizeEv                                    = 0x0200BA44 + 1; /* cCellAnim::getPaletteSize() const */
+	_ZN9cCellAnim13setEngineTypeEh                                      = 0x0200BA6C + 1; /* cCellAnim::setEngineType(unsigned char) */
+	_ZNK9cCellAnim13getEngineTypeEv                                     = 0x0200BA78 + 1; /* cCellAnim::getEngineType() const */
+	_ZN9cCellAnim11setPositionERK5sVec3                                 = 0x0200BA7C + 1; /* cCellAnim::setPosition(sVec3 const&) */
+	_ZN9cCellAnim20reserveDirectTextureEm                               = 0x0200BA98 + 1; /* cCellAnim::reserveDirectTexture(unsigned long) */
+	_ZN9cCellAnim20releaseDirectTextureEl                               = 0x0200BAB8 + 1; /* cCellAnim::releaseDirectTexture(long) */
+	_ZN9cCellAnim19uploadDirectTextureEPKvmm                            = 0x0200BAD8 + 1; /* cCellAnim::uploadDirectTexture(void const*, unsigned long, unsigned long) */
+	_ZNK9cCellAnim14getSeqFileInfoEm                                    = 0x0200BB1C + 1; /* cCellAnim::getSeqFileInfo(unsigned long) const */
+	_ZN9cCellAnim11syncPaletteEv                                        = 0x0200BB64 + 1; /* cCellAnim::syncPalette() */
+	_ZN9cCellAnim11loadPaletteEm                                        = 0x0200BB8C + 1; /* cCellAnim::loadPalette(unsigned long) */
+	_ZN9cCellAnim14releasePaletteEv                                     = 0x0200BBBC + 1; /* cCellAnim::releasePalette() */
+	_ZN9cCellAnim15releaseGraphicsEv                                    = 0x0200BBD0 + 1; /* cCellAnim::releaseGraphics() */
+	_ZNK9cCellAnim14getPaletteDataEv                                    = 0x0200BBE8 + 1; /* cCellAnim::getPaletteData() const */
+	_ZN9cCellAnim16applyColorFilterERK12cColorFilter                    = 0x0200BBF8 + 1; /* cCellAnim::applyColorFilter(cColorFilter const&) */
+	_ZNK9cCellAnim13hasPalette256Ev                                     = 0x0200BC10 + 1; /* cCellAnim::hasPalette256() const */
+	_ZN9cCellAnim15applyBrightnessEl                                    = 0x0200BC2C + 1; /* cCellAnim::applyBrightness(long) */
+	_ZN9cCellAnim18setPaletteDeferredEv                                 = 0x0200BC44 + 1; /* cCellAnim::setPaletteDeferred() */
+	_ZN9cCellAnim14setColorFilterEPK12cColorFilter                      = 0x0200BC64 + 1; /* cCellAnim::setColorFilter(cColorFilter const*) */
+	_ZNK9cCellAnim11getPrimFlipEv                                       = 0x02008364 + 1; /* cCellAnim::getPrimFlip() const */
+	_ZN9cCellAnim12setPrimGroupEh                                       = 0x020280A8 + 1; /* cCellAnim::setPrimGroup(unsigned char) */
+	_ZN9cCellAnim22setPrimDisplayPriorityEh                             = 0x0203FDD8 + 1; /* cCellAnim::setPrimDisplayPriority(unsigned char) */
+	_ZN9cCellAnim13setPrimShadowEbh                                     = 0x020593DC + 1; /* cCellAnim::setPrimShadow(bool, unsigned char) */
+	_ZN9cCellAnim12setSequencerEP14cAnimSequencer                       = 0x0205963C + 1; /* cCellAnim::setSequencer(cAnimSequencer*) */
+
+	_ZN9cCellAnim16seqFileInfoTableE                                    = 0x0208C064; /* cCellAnim::seqFileInfoTable */
+	_ZN9cCellAnim12seqFileIDMapE                                        = 0x02088910; /* cCellAnim::seqFileIDMap */
+	_ZN9cCellAnim21seqFileIDMapLocalizedE                               = 0x02086F84; /* cCellAnim::seqFileIDMapLocalized */
+	_ZN9cCellAnim5myDTIE                                                = 0x020B8480; /* cCellAnim::myDTI */
+	_ZTV9cCellAnim                                                      = 0x020A2CB8 - 8; /* vtable for cCellAnim */
+
+	/* GenericDTI<cCellAnim> */
+		_ZN10GenericDTII9cCellAnimEC2EPKcP3DTImmm                           = 0x0200C9BC + 1; /* GenericDTI<cCellAnim>::GenericDTI(char const*, DTI*, unsigned long, unsigned long, unsigned long) */
+		_ZNK10GenericDTII9cCellAnimE9constructEv                            = 0x0200AE18 + 1; /* GenericDTI<cCellAnim>::construct() const */
+
+		_ZTV10GenericDTII9cCellAnimE                                        = 0x020A2C90 - 8; /* vtable for GenericDTI<cCellAnim> */
 
 /* INPUT */
 	keysPressed														= 0x020C9D42;
