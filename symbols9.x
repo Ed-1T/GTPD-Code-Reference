@@ -22,6 +22,50 @@
 	_ZdlPvj = 0x02031270 + 1; /* operator delete(void*, unsigned int) */
 	_ZdaPv  = 0x020312a4 + 1; /* operator delete[](void*) */
 
+/* cStream */
+	_ZN7cStreamD0Ev								= 0x0201E658 + 1; /* cStream::~cStream() */
+	_ZN7cStreamD1Ev								= 0x0201E9C0 + 1; /* cStream::~cStream() */
+	_ZN7cStreamD2Ev								= 0x02007C10 + 1; /* cStream::~cStream() */
+	_ZN7cStreamC1Ev								= 0x0201E534 + 1; /* cStream::cStream() */
+	_ZN7cStreamC2Ev								= 0x0201E534 + 1; /* cStream::cStream() */
+	_ZN7cStream5virt3Ev                         = 0x0201E9B0 + 1; /* cStream::virt3() */
+	_ZN7cStream5virt4Ev                         = 0x0201E9AC + 1; /* cStream::virt4() */
+	_ZN7cStream4openEPKch                       = 0x0201E9A8 + 1; /* cStream::open(char const*, unsigned char) */
+	_ZN7cStream5virt9Ev                         = 0x0201E9A4 + 1; /* cStream::virt9() */
+	_ZN7cStream7getPathEv                       = 0x0201E99C + 1; /* cStream::getPath() */
+	_ZN7cStream6virt13Ev                        = 0x0201E998 + 1; /* cStream::virt13() */
+
+	_ZTV7cStream                                = 0x020A4618 - 8; /* vtable for cStream */
+
+/* cFile */
+	_ZN5cFileD0Ev                               = 0x0201EF90 + 1; /* cFile::~cFile() */
+	_ZN5cFileD1Ev                               = 0x0201EF74 + 1; /* cFile::~cFile() */
+	_ZN5cFileD2Ev                               = 0x0201EF74 + 1; /* cFile::~cFile() */
+	_ZN5cFileC1Ev                               = 0x0201EF58 + 1; /* cFile::cFile() */
+	_ZN5cFileC2Ev                               = 0x0201EF58 + 1; /* cFile::cFile() */
+	_ZN5cFile4openEPKch                         = 0x0201EFB4 + 1; /* cFile::open(char const*, unsigned char) */
+	_ZN5cFile5closeEv                           = 0x0201EFD8 + 1; /* cFile::close() */
+	_ZN5cFile4seekElN7cStream8SeekModeE         = 0x0201EFE4 + 1; /* cFile::seek(long, cStream::SeekMode) */
+	_ZN5cFile4readEPvm                          = 0x0201F014 + 1; /* cFile::read(void*, unsigned long) */
+	_ZN5cFile4tellEv                            = 0x0201F020 + 1; /* cFile::tell() */
+	_ZN5cFile7getSizeEv                         = 0x0201F02C + 1; /* cFile::getSize() */
+	_ZN5cFile7getPathEv                         = 0x0201F084 + 1; /* cFile::getPath() */
+
+	_ZTV5cFile                                  = 0x020A4670 - 8; /* vtable for cFile */
+
+/* cFileSpan */
+	_ZN9cFileSpanD0Ev                           = 0x02007BFC + 1; /* cFileSpan::~cFileSpan() */
+	_ZN9cFileSpanD1Ev                           = 0x0201E9C4 + 1; /* cFileSpan::~cFileSpan() */
+	_ZN9cFileSpanD2Ev                           = 0x0201E9C4 + 1; /* cFileSpan::~cFileSpan() */
+	_ZN9cFileSpanC1Ev                           = 0x0201E540 + 1; /* cFileSpan::cFileSpan() */
+	_ZN9cFileSpanC2Ev                           = 0x0201E540 + 1; /* cFileSpan::cFileSpan() */
+	_ZN9cFileSpan5closeEv                       = 0x0201E9BC + 1; /* cFileSpan::close() */
+	_ZN9cFileSpan4seekElN7cStream8SeekModeE     = 0x0201E554 + 1; /* cFileSpan::seek(long, cStream::SeekMode) */
+	_ZN9cFileSpan4readEPvm                      = 0x0201E568 + 1; /* cFileSpan::read(void*, unsigned long) */
+	_ZN9cFileSpan4tellEv                        = 0x0201E9B4 + 1; /* cFileSpan::tell() */
+	_ZN9cFileSpan7getSizeEv                     = 0x0201E87C + 1; /* cFileSpan::getSize() */
+
+	_ZTV9cFileSpan                              = 0x020A45DC - 8; /* vtable for cFileSpan */
 
 /* DTI */
 	_ZN3DTIC2Ev														= 0x0201edac + 1; /* DTI::DTI() */
