@@ -1,13 +1,13 @@
 #pragma once
 
-#include "CnObject.hpp"
-#include "Math/Vector.hpp"
+#include "Framework/CnObject.hpp"
+#include "Framework/CnMath.hpp"
 
 class cColorFilter;
 class cAnimSequencer;
 
 class cCellProxy : public CnObject {
-	GTPD_OBJECT(cCellProxy);
+	CN_OBJECT(cCellProxy);
 public:
 
 	GTPD_FUNC cCellProxy();
@@ -44,7 +44,7 @@ GTPD_PRIVATE:
 NTR_SIZE_GUARD(cCellProxy, 0x28);
 
 class cCellPrim : public CnObject {
-	GTPD_OBJECT(cCellPrim);
+	CN_OBJECT(cCellPrim);
 public:
 
 	GTPD_FUNC cCellPrim();
@@ -98,7 +98,7 @@ GTPD_PRIVATE:
 NTR_SIZE_GUARD(cCellPrim, 0x40);
 
 class cCellAnim : public CnObject {
-	GTPD_OBJECT(cCellAnim);
+	CN_OBJECT(cCellAnim);
 public:
 
 	static constexpr u32 AutoOffset = 1 << 31;
@@ -126,7 +126,7 @@ public:
 
 	GTPD_FUNC virtual ~cCellAnim() override;
 
-	GTPD_FUNC virtual void registerMembers(void* unk) const override;
+	GTPD_FUNC virtual void createProperty(CnPropertyList& s) override;
 
 	GTPD_FUNC void reset();
 
@@ -150,7 +150,7 @@ public:
 
 	GTPD_FUNC u8 getEngineType() const;
 
-	GTPD_FUNC void setPosition(const sVec3& position);
+	GTPD_FUNC void setPosition(const CnVector& position);
 
 	GTPD_FUNC s32 reserveDirectTexture(u32 size);
 

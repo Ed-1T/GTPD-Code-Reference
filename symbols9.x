@@ -519,7 +519,7 @@
 	_ZN9cCellAnimD2Ev													= 0x0200B494 + 1; /* cCellAnim::~cCellAnim() */
 	_ZN9cCellAnimC1Ev													= 0x0200B460 + 1; /* cCellAnim::cCellAnim() */
 	_ZN9cCellAnimC2Ev													= 0x0200B460 + 1; /* cCellAnim::cCellAnim() */
-	_ZNK9cCellAnim15registerMembersEPv                                  = 0x0200B864 + 1; /* cCellAnim::registerMembers(void*) const */
+	_ZN9cCellAnim14createPropertyER14CnPropertyList                     = 0x0200B864 + 1; /* cCellAnim::createProperty(CnPropertyList&) */
 	_ZNK9cCellAnim6getDTIEv                                             = 0x0200C948 + 1; /* cCellAnim::getDTI() const */
 	_ZN9cCellAnim5resetEv												= 0x0200B4E0 + 1; /* cCellAnim::reset() */
 	_ZN9cCellAnim16releaseAnimationEv                                   = 0x0200B504 + 1; /* cCellAnim::releaseAnimation() */
@@ -532,7 +532,7 @@
 	_ZNK9cCellAnim14getPaletteSizeEv                                    = 0x0200BA44 + 1; /* cCellAnim::getPaletteSize() const */
 	_ZN9cCellAnim13setEngineTypeEh                                      = 0x0200BA6C + 1; /* cCellAnim::setEngineType(unsigned char) */
 	_ZNK9cCellAnim13getEngineTypeEv                                     = 0x0200BA78 + 1; /* cCellAnim::getEngineType() const */
-	_ZN9cCellAnim11setPositionERK5sVec3                                 = 0x0200BA7C + 1; /* cCellAnim::setPosition(sVec3 const&) */
+	_ZN9cCellAnim11setPositionERK8CnVector                              = 0x0200BA7C + 1; /* cCellAnim::setPosition(CnVector const&) */
 	_ZN9cCellAnim20reserveDirectTextureEm                               = 0x0200BA98 + 1; /* cCellAnim::reserveDirectTexture(unsigned long) */
 	_ZN9cCellAnim20releaseDirectTextureEl                               = 0x0200BAB8 + 1; /* cCellAnim::releaseDirectTexture(long) */
 	_ZN9cCellAnim19uploadDirectTextureEPKvmm                            = 0x0200BAD8 + 1; /* cCellAnim::uploadDirectTexture(void const*, unsigned long, unsigned long) */
