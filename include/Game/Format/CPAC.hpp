@@ -1,6 +1,6 @@
 #pragma once
 
-#include "Game/Common.hpp"
+#include "Common.hpp"
 
 enum CPACKeyType {
 	PKEY,

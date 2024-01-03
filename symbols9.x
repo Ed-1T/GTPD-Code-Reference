@@ -462,6 +462,23 @@
 	_ZZN17cDSProcessManager11getInstanceEvE10myInstance				= 0x020B8AD4; /* cDSProcessManager::getInstance()::myInstance */
 
 
+/* cCPACFile */
+	_ZN9cCPACFileC2EP11CnNitroFile										= 0x0201E580 + 1; /* cCPACFile::cCPACFile(CnNitroFile*) */
+	_ZNK9cCPACFile11getFileSizeEv                                       = 0x0200CB5C + 1; /* cCPACFile::getFileSize() const */
+	_ZNK9cCPACFile15isFileLocalizedEv                                   = 0x0200CF3C + 1; /* cCPACFile::isFileLocalized() const */
+	_ZN9cCPACFile8openFileEmt                                           = 0x0201E664 + 1; /* cCPACFile::openFile(unsigned long, unsigned short) */
+	_ZN9cCPACFile8readFileEmtPv                                         = 0x0201E7F8 + 1; /* cCPACFile::readFile(unsigned long, unsigned short, void*) */
+	_ZN9cCPACFile8readFileEmtbP11CnAllocator                            = 0x0201E888 + 1; /* cCPACFile::readFile(unsigned long, unsigned short, bool, CnAllocator*) */
+	_ZN9cCPACFile12setFileCountEmm                                      = 0x0201E978 + 1; /* cCPACFile::setFileCount(unsigned long, unsigned long) */
+	_ZN9cCPACFile11getFileSizeEmt                                       = 0x0201E97C + 1; /* cCPACFile::getFileSize(unsigned long, unsigned short) */
+
+/* cCPACImpl */
+	_ZN9cCPACImplC2Ev                                                   = 0x0202EF88 + 1; /* cCPACImpl::cCPACImpl() */
+	_ZNK9cCPACImpl9getCPAC2DEv                                          = 0x02008824 + 1; /* cCPACImpl::getCPAC2D() const */
+	_ZNK9cCPACImpl9getCPAC3DEv                                          = 0x0201A4E8 + 1; /* cCPACImpl::getCPAC3D() const */
+	_ZN9cCPACImpl12loadPackagesEb                                       = 0x0202EF90 + 1; /* cCPACImpl::loadPackages(bool) */
+
+
 /* cAnimSequencer */
 	_ZN14cAnimSequencerC1Ev                                             = 0x02007AB8 + 1; /* cAnimSequencer::cAnimSequencer() */
 	_ZN14cAnimSequencerC2Ev                                             = 0x02007AB8 + 1; /* cAnimSequencer::cAnimSequencer() */

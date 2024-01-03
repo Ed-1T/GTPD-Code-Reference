@@ -1,32 +1,31 @@
 #pragma once
 
-#include "File.hpp"
+#include "Framework/CnAllocator.hpp"
+#include "Framework/CnNitroFile.hpp"
 #include "Format/CPAC.hpp"
-
-class cAllocatorBase;
 
 class cCPACFile {
 public:
 
-	GTPD_FUNC cCPACFile(cFile* file);
+	GTPD_FUNC cCPACFile(CnNitroFile* pFile);
 
 	GTPD_FUNC u32 getFileSize() const;
 
 	GTPD_FUNC bool isFileLocalized() const;
 
-	GTPD_FUNC cFileSpan* openFile(u32 packageID, u32 fileID);
+	GTPD_FUNC CnNitroFileSpan* openFile(u32 packId, u16 keyId);
 
-	GTPD_FUNC void* readFile(u32 packageID, u32 fileID, void* dst);
+	GTPD_FUNC void* readFile(u32 packId, u16 keyId, void* pDest);
 
-	GTPD_FUNC void* readFile(u32 packageID, u32 fileID, bool temporary, cAllocatorBase* heap);
+	GTPD_FUNC void* readFile(u32 packId, u16 keyId, bool temporary, CnAllocator* allocator);
 
-	GTPD_FUNC void setFileCount(u32 packageID, u32 count); // Dummy function
+	GTPD_FUNC void setFileCount(u32 packId, u32 count); // Dummy function
 
-	GTPD_FUNC u32 getFileSize(u32 packageID, u32 fileID);
+	GTPD_FUNC u32 getFileSize(u32 packId, u16 keyId);
 
 GTPD_PRIVATE:
 
-	cFile* mpFile;
+	CnNitroFile* mpFile;
 	u32 mFileSize;
 	bool mbFileLocalized;
 	CPACSection mSections[8];
@@ -34,11 +33,10 @@ GTPD_PRIVATE:
 };
 NTR_SIZE_GUARD(cCPACFile, 0xCC);
 
-class cCPAC {
-	GTPD_SINGLETON(cCPAC);
+class cCPACImpl {
 public:
 
-	GTPD_FUNC cCPAC();
+	GTPD_FUNC cCPACImpl();
 
 	GTPD_FUNC cCPACFile* getCPAC2D() const;
 
@@ -57,8 +55,10 @@ GTPD_PRIVATE:
 	u8 unk8;
 
 };
-NTR_SIZE_GUARD(cCPAC, 0xC);
+NTR_SIZE_GUARD(cCPACImpl, 0xC);
 
-#define CPAC	GTPD_GET_SINGLETON(cCPAC)
-#define CPAC2D	GTPD_GET_SINGLETON(cCPAC).getCPAC2D()
-#define CPAC3D	GTPD_GET_SINGLETON(cCPAC).getCPAC3D()
+GTPD_CREATE_SINGLETON(CPAC, cCPACImpl);
+
+#define CPAC	GTPD_GET_SINGLETON(CPAC)
+#define CPAC2D	GTPD_GET_SINGLETON(CPAC).getCPAC2D()
+#define CPAC3D	GTPD_GET_SINGLETON(CPAC).getCPAC3D()
