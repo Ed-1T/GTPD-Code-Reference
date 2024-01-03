@@ -461,6 +461,45 @@
 
 	_ZZN17cDSProcessManager11getInstanceEvE10myInstance				= 0x020B8AD4; /* cDSProcessManager::getInstance()::myInstance */
 
+
+/* cAnimSequencer */
+	_ZN14cAnimSequencerC1Ev                                             = 0x02007AB8 + 1; /* cAnimSequencer::cAnimSequencer() */
+	_ZN14cAnimSequencerC2Ev                                             = 0x02007AB8 + 1; /* cAnimSequencer::cAnimSequencer() */
+	_ZN14cAnimSequencerD0Ev                                             = 0x02007B74 + 1; /* cAnimSequencer::~cAnimSequencer() */
+	_ZN14cAnimSequencerD1Ev												= 0x02007B14 + 1; /* cAnimSequencer::~cAnimSequencer() */
+	_ZN14cAnimSequencerD2Ev												= 0x02007B14 + 1; /* cAnimSequencer::~cAnimSequencer() */
+	_ZN14cAnimSequencer14createPropertyER14CnPropertyList               = 0x020088DC + 1; /* cAnimSequencer::createProperty(CnPropertyList&) */
+	_ZNK14cAnimSequencer6getDTIEv                                       = 0x02008AD8 + 1; /* cAnimSequencer::getDTI() const */
+	_ZN14cAnimSequencer6setSeqEPtbl                                     = 0x02007C14 + 1; /* cAnimSequencer::setSeq(unsigned short*, bool, long) const */
+	_ZNK14cAnimSequencer11isTransDoneEv                                 = 0x0200C1D4 + 1; /* cAnimSequencer::isTransDone() const */
+	_ZNK14cAnimSequencer15hasSharedParentEv                             = 0x0200C1DC + 1; /* cAnimSequencer::hasSharedParent() const */
+	_ZNK14cAnimSequencer15getCurrentIndexEv                             = 0x020283EC + 1; /* cAnimSequencer::getCurrentIndex() const */
+	_ZNK14cAnimSequencer8getSeqIdEv                                     = 0x02029AB4 + 1; /* cAnimSequencer::getSeqId() const */
+	_ZN14cAnimSequencer9setParentEP10uScript2dR                         = 0x02059638 + 1; /* cAnimSequencer::setParent(uScript2dR*) */
+	_ZN14cAnimSequencer15setSharedParentEPS_                            = 0x020598A4 + 1; /* cAnimSequencer::setSharedParent(cAnimSequencer*) */
+	_ZN14cAnimSequencer12setGhostModeEm                                 = 0x02059B18 + 1; /* cAnimSequencer::setGhostMode(unsigned long) */
+	_ZN14cAnimSequencer14setAcceleratorEh                               = 0x02059C0C + 1; /* cAnimSequencer::setAccelerator(unsigned char) */
+	_ZN14cAnimSequencer11setLoopWaitEt                                  = 0x02008ABC + 1; /* cAnimSequencer::setLoopWait(unsigned short) */
+	_ZN14cAnimSequencer9readFrameEm                                     = 0x020086C8 + 1; /* cAnimSequencer::readFrame(unsigned long) */
+	_ZN14cAnimSequencer5resetEPt                                        = 0x02007C40 + 1; /* cAnimSequencer::reset(unsigned short*) */
+	_ZN14cAnimSequencer7initSeqEPt                                      = 0x02008734 + 1; /* cAnimSequencer::initSeq(unsigned short*) */
+	_ZN14cAnimSequencer9reloadReqEv                                     = 0x02008560 + 1; /* cAnimSequencer::reloadReq() */
+	_ZN14cAnimSequencer11releaseVRAMEv                                  = 0x02008A98 + 1; /* cAnimSequencer::releaseVRAM() */
+	_ZN14cAnimSequencer12realTransReqEm                                 = 0x0200853C + 1; /* cAnimSequencer::realTransReq(unsigned long) */
+	_ZN14cAnimSequencer11updateTransEv                                  = 0x0200857C + 1; /* cAnimSequencer::updateTrans() */
+	_ZN14cAnimSequencer6updateEv                                        = 0x02007C54 + 1; /* cAnimSequencer::update() */
+	_ZN14cAnimSequencer12setSeqAndCmdEbl                                = 0x02007CD4 + 1; /* cAnimSequencer::setSeqAndCmd(bool, long) */
+	_ZN14cAnimSequencer13seqcmd_centerEPt                               = 0x020084A0 + 1; /* cAnimSequencer::seqcmd_center(unsigned short*) */
+	_ZN14cAnimSequencer12seqcmd_pointEPt                                = 0x020084C8 + 1; /* cAnimSequencer::seqcmd_point(unsigned short*) */
+	_ZN14cAnimSequencer11seqcmd_coreEPt                                 = 0x020084F0 + 1; /* cAnimSequencer::seqcmd_core(unsigned short*) */
+	_ZNK14cAnimSequencer10isEndFrameEv                                  = 0x02008510 + 1; /* cAnimSequencer::isEndFrame() const */
+	_ZN14cAnimSequencer3DTIE                                            = 0x020B1944;     /* cAnimSequencer::DTI */
+	_ZTV14cAnimSequencer                                                = 0x020A2B14 - 8; /* vtable for cAnimSequencer */
+
+	_ZN14cAnimSequencer5MyDTIC2EPKcP5CnDTImmNS3_4ATTRE                  = 0x02008AF0 + 1; /* cAnimSequencer::MyDTI::MyDTI(char const*, CnDTI*, unsigned long, unsigned long, CnDTI::ATTR) */
+	_ZNK14cAnimSequencer5MyDTI11newInstanceEv                           = 0x02007A94 + 1; /* cAnimSequencer::MyDTI::newInstance() const */
+	_ZTVN14cAnimSequencer5MyDTIE                                        = 0x020A2B08 - 8; /* vtable for cAnimSequencer::MyDTI */
+
 /* cCellProxy */
 	_ZN10cCellProxy14releaseTextureEv = 0x0200B060 + 1;
 	_ZN10cCellProxy14releasePaletteEv = 0x0200B074 + 1;
