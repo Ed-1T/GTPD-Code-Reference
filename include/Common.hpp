@@ -6,18 +6,17 @@
 
 #define GTPD_PRIVATE public
 
-#define GTPD_SINGLETON($type) \
-public: \
-	GTPD_FUNC static $type& getInstance();
+#define GTPD_CREATE_SINGLETON($name, $type) \
+	GTPD_FUNC $type& g##$name(); \
 
-#define GTPD_SINGLETON_DEFINE($type) \
-	GTPD_FUNC $type& $type::getInstance() { \
+#define GTPD_DEFINE_SINGLETON($name, $type) \
+	GTPD_FUNC $type& g##$name() { \
 		static $type myInstance; \
 		return myInstance; \
 	}
 
-#define GTPD_GET_SINGLETON($type) \
-	$type::getInstance()
+#define GTPD_GET_SINGLETON($name) \
+	g##$name()
 
 // Mark these functions as Thumb
 GTPD_FUNC void* operator new(unsigned int);

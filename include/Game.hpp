@@ -6,4 +6,5 @@
 #include "cxx_alloc.hpp"
 #include "nodiscard.hpp"
 
-#include "Game/Common.hpp"
+#include "Common.hpp"
+#include "Framework.hpp"
