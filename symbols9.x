@@ -377,89 +377,81 @@
 
 
 /* cProcess */
-	_ZN8cProcessD0Ev                                                = 0x020231F0 + 1; /* cProcess::~cProcess() */
-	_ZN8cProcessD1Ev                                                = 0x020232A0 + 1; /* cProcess::~cProcess() */
-	_ZN8cProcessD2Ev                                                = 0x02022D64 + 1; /* cProcess::~cProcess() */
-	_ZN8cProcessC1Ev                                                = 0x02022D9C + 1; /* cProcess::cProcess() */
-	_ZN8cProcessC2Ev                                                = 0x02022D70 + 1; /* cProcess::cProcess() */
-	_ZNK8cProcess15registerMembersEPv								= 0x02022E0C + 1; /* cProcess::registerMembers(void*) const */
-	_ZN8cProcess6createEv                                           = 0x0202308C + 1; /* cProcess::create() */
-	_ZN8cProcess6updateEv                                           = 0x02023090 + 1; /* cProcess::update() */
-	_ZN8cProcess7destroyEv                                          = 0x02023238 + 1; /* cProcess::destroy() */
-	_ZNK8cProcess6getDTIEv                                          = 0x02022F24 + 1; /* cProcess::getDTI() const */
-	_ZN8cProcess11loadOverlayEv                                     = 0x02023088 + 1; /* cProcess::loadOverlay() */
-	_ZNK8cProcess12getParentDTIEv                                   = 0x020231E8 + 1; /* cProcess::getParentDTI() const */
-	_ZNK8cProcess7getNameEv                                         = 0x02023288 + 1; /* cProcess::getName() const */
-	_ZNK8cProcess14getNextProcessEv                                 = 0x02022DC8 + 1; /* cProcess::getNextProcess() const */
-	_ZNK8cProcess14getPrevProcessEv                                 = 0x02022DD8 + 1; /* cProcess::getPrevProcess() const */
-	_ZNK8cProcess14getLastProcessEv                                 = 0x02022DF0 + 1; /* cProcess::getLastProcess() const */
-	_ZNK8cProcess19getCoProcessManagerEv                            = 0x02022DFC + 1; /* cProcess::getCoProcessManager() const */
-	_ZNK8cProcess17getProcessManagerEv                              = 0x02031B20 + 1; /* cProcess::getProcessManager() const */
-	_ZN8cProcess14installOverlayEmb                                 = 0x02022EAC + 1; /* cProcess::installOverlay(unsigned long, bool) */
-	_ZN8cProcess4exitEv                                             = 0x02022F6C + 1; /* cProcess::exit() */
-	_ZNK8cProcess9isCreatedEv                                       = 0x020230D4 + 1; /* cProcess::isCreated() const */
-	_ZN8cProcess8setParamEm                                         = 0x020230D8 + 1; /* cProcess::setParam(unsigned long) */
+	_ZN8cProcessC1Ev                                                    = 0x02022D9C + 1; /* cProcess::cProcess() */
+	_ZN8cProcessC2Ev                                                    = 0x02022D70 + 1; /* cProcess::cProcess() */
+	_ZN8cProcessD0Ev                                                    = 0x020231F0 + 1; /* cProcess::~cProcess() */
+	_ZN8cProcessD1Ev                                                    = 0x020232A0 + 1; /* cProcess::~cProcess() */
+	_ZN8cProcessD2Ev                                                    = 0x02022D64 + 1; /* cProcess::~cProcess() */
+	_ZNK8cProcess6getDTIEv                                              = 0x02022F24 + 1; /* cProcess::getDTI() const */
+	_ZN8cProcess14createPropertyER14CnPropertyList                      = 0x02022E0C + 1; /* cProcess::createProperty(CnPropertyList&) */
+	_ZN8cProcess4loadEv                                                 = 0x02023088 + 1; /* cProcess::load() */
+	_ZN8cProcess4initEv                                                 = 0x0202308C + 1; /* cProcess::init() */
+	_ZN8cProcess4moveEv                                                 = 0x02023090 + 1; /* cProcess::move() */
+	_ZN8cProcess5finalEv                                                = 0x02023238 + 1; /* cProcess::final() */
+	_ZNK8cProcess13getParentTypeEv                                      = 0x020231E8 + 1; /* cProcess::getParentType() const */
+	_ZNK8cProcess7getNameEv                                             = 0x02023288 + 1; /* cProcess::getName() const */
+	_ZNK8cProcess8getChildEv                                            = 0x02022DC8 + 1; /* cProcess::getChild() const */
+	_ZNK8cProcess9getParentEv                                           = 0x02022DD8 + 1; /* cProcess::getParent() const */
+	_ZNK8cProcess10getAnotherEv                                         = 0x02022DF0 + 1; /* cProcess::getAnother() const */
+	_ZNK8cProcess13getAnotherMgrEv                                      = 0x02022DFC + 1; /* cProcess::getAnotherMgr() const */
+	_ZNK8cProcess6getMgrEv                                              = 0x02031B20 + 1; /* cProcess::getMgr() const */
+	_ZN8cProcess12load_overlayEmb                                       = 0x02022EAC + 1; /* cProcess::load_overlay(unsigned long, bool) */
+	_ZN8cProcess9terminateEv                                            = 0x02022F6C + 1; /* cProcess::terminate() */
+	_ZNK8cProcess6isInitEv                                              = 0x020230D4 + 1; /* cProcess::isInit() const */
+	_ZN8cProcess8setParamEm                                             = 0x020230D8 + 1; /* cProcess::setParam(unsigned long) */
+	_ZN8cProcess3DTIE                                                   = 0x020C9DB0;     /* cProcess::DTI */
+	_ZTVN8cProcessE                                                     = 0x020A49A0 - 8; /* vtable for cProcess */
 
-	_ZTV8cProcess													= 0x020A49A0 - 8; /* vtable for cProcess */
-	_ZN8cProcess5myDTIE												= 0x020C9DB0; /* cProcess::myDTI */
-
-	/* GenericDTI<cProcess> */
-		_ZN10GenericDTII8cProcessEC2EPKcP3DTImmm                        = 0x020232E0 + 1; /* GenericDTI<cProcess>::GenericDTI(char const*, DTI*, unsigned long, unsigned long, unsigned long) */
-		_ZNK10GenericDTII8cProcessE9constructEv                         = 0x02022D14 + 1; /* GenericDTI<cProcess>::construct() const */
-
-		_ZTV10GenericDTII8cProcessE                                     = 0x020A4944 - 8; /* vtable for GenericDTI<cProcess> */
+	/* cProcess::MyDTI */
+		_ZN8cProcess5MyDTIC2EPKcP5CnDTImmNS3_4ATTRE							= 0x020232E0 + 1; /* cProcess::MyDTI::MyDTI(char const*, CnDTI*, unsigned long, unsigned long, CnDTI::ATTR) */
+		_ZNK8cProcess5MyDTI11newInstanceEv                                  = 0x02022D14 + 1; /* cProcess::MyDTI::newInstance() const */
+		_ZTVN8cProcess5MyDTIE												= 0x020A4944 - 8; /* vtable for cProcess::MyDTI */
 
 /* cProcessManager */
+	_ZN15cProcessManagerC1Ev                                            = 0x02022EE0 + 1; /* cProcessManager::cProcessManager() */
+	_ZN15cProcessManagerC2Ev                                            = 0x02022EE0 + 1; /* cProcessManager::cProcessManager() */
 	_ZN15cProcessManagerD0Ev                                            = 0x020232CC + 1; /* cProcessManager::~cProcessManager() */
 	_ZN15cProcessManagerD1Ev                                            = 0x02023274 + 1; /* cProcessManager::~cProcessManager() */
 	_ZN15cProcessManagerD2Ev                                            = 0x02023274 + 1; /* cProcessManager::~cProcessManager() */
-	_ZN15cProcessManagerC1Ev                                            = 0x02022EE0 + 1; /* cProcessManager::cProcessManager() */
-	_ZNK15cProcessManager6getDTIEv										= 0x02023280 + 1; /* cProcessManager::getDTI() const */
-	_ZNK15cProcessManager14getProcessByIDEl                             = 0x02022F04 + 1; /* cProcessManager::getProcessByID(long) const */
-	_ZNK15cProcessManager14getLastProcessEv                             = 0x02022F14 + 1; /* cProcessManager::getLastProcess() const */
-	_ZN15cProcessManager13switchProcessERK3DTIm                         = 0x02022F2C + 1; /* cProcessManager::switchProcess(DTI*, unsigned long) */
-	_ZN15cProcessManager13switchProcessEPKcm                            = 0x02022F34 + 1; /* cProcessManager::switchProcess(char const*, unsigned long) */
-	_ZN15cProcessManager20switchToDummyProcessEv                        = 0x02022F4C + 1; /* cProcessManager::switchToDummyProcess() */
-	_ZNK15cProcessManager8hasChildERK3DTI                               = 0x02022F74 + 1; /* cProcessManager::hasChild(DTI*) const */
-	_ZNK15cProcessManager8hasChildEPKc                                  = 0x02022FA4 + 1; /* cProcessManager::hasChild(char const*) const */
-	_ZNK15cProcessManager9findChildERK3DTI                              = 0x02022FC0 + 1; /* cProcessManager::findChild(DTI*) const */
-	_ZN15cProcessManager15updateProcessesEv                             = 0x02022FF4 + 1; /* cProcessManager::updateProcesses() */
-	_ZN15cProcessManager16trySwitchProcessEv                            = 0x02023094 + 1; /* cProcessManager::trySwitchProcess() */
-	_ZN15cProcessManager21spawnProcessHierarchyERK3DTI                  = 0x020230DC + 1; /* cProcessManager::spawnProcessHierarchy(DTI*) */
-	_ZN15cProcessManager14destroyProcessERP8cProcess                    = 0x02023204 + 1; /* cProcessManager::destroyProcess(cProcess*&) */
-	_ZN15cProcessManager18linkProcessManagerEPS_                        = 0x0202323C + 1; /* cProcessManager::linkProcessManager(cProcessManager*) */
+	_ZNK15cProcessManager6getDTIEv                                      = 0x02023280 + 1; /* cProcessManager::getDTI() const */
+	_ZNK15cProcessManager10getProcessEl                                 = 0x02022F04 + 1; /* cProcessManager::getProcess(long) const */
+	_ZNK15cProcessManager17getAnotherProcessEv                          = 0x02022F14 + 1; /* cProcessManager::getAnotherProcess() const */
+	_ZN15cProcessManager13setAnotherMgrEPS_                             = 0x0202323C + 1; /* cProcessManager::setAnotherMgr(cProcessManager*) */
+	_ZN15cProcessManager4jumpERK5CnDTIm                                 = 0x02022F2C + 1; /* cProcessManager::jump(CnDTI const&, unsigned long) */
+	_ZN15cProcessManager4jumpEPKcm                                      = 0x02022F34 + 1; /* cProcessManager::jump(char const*, unsigned long) */
+	_ZN15cProcessManager5resetEv                                        = 0x02022F4C + 1; /* cProcessManager::reset() */
+	_ZNK15cProcessManager7isExistERK5CnDTI                              = 0x02022F74 + 1; /* cProcessManager::isExist(CnDTI const&) const */
+	_ZNK15cProcessManager7isExistEPKc                                   = 0x02022FA4 + 1; /* cProcessManager::isExist(char const*) const */
+	_ZNK15cProcessManager11findProcessERK5CnDTI                         = 0x02022FC0 + 1; /* cProcessManager::findProcess(CnDTI const&) const */
+	_ZN15cProcessManager4moveEv                                         = 0x02022FF4 + 1; /* cProcessManager::move() */
+	_ZN15cProcessManager11jumpProcessEv                                 = 0x02023094 + 1; /* cProcessManager::jumpProcess() */
+	_ZN15cProcessManager12setupProcessERK5CnDTI                         = 0x020230DC + 1; /* cProcessManager::setupProcess(CnDTI const&) */
+	_ZNK15cProcessManager8finalizeERP8cProcess                          = 0x02023204 + 1; /* cProcessManager::finalize(cProcess*&) const */
+	_ZN15cProcessManager3DTIE                                           = 0x020C9DCC;     /* cProcessManager::DTI */
+	_ZTVN15cProcessManagerE                                             = 0x020A4950 - 8; /* vtable for cProcessManager */
 
-	_ZTV15cProcessManager                                               = 0x020A4950 - 8; /* vtable for cProcessManager */
-	_ZN15cProcessManager5myDTIE                                         = 0x020C9DCC; /* cProcessManager::myDTI */
-
-	/* GenericDTI<cProcessManager> */
-		_ZN10GenericDTII15cProcessManagerEC2EPKcP3DTImmm                    = 0x020232FC + 1; /* GenericDTI<cProcessManager>::GenericDTI(char const*, DTI*, unsigned long, unsigned long, unsigned long) */
-		_ZNK10GenericDTII15cProcessManagerE9constructEv                     = 0x02022D28 + 1; /* GenericDTI<cProcessManager>::construct() const */
-
-		_ZTV10GenericDTII15cProcessManagerE                                 = 0x020A4938 - 8; /* vtable for GenericDTI<cProcessManager> */
+	/* cProcessManager */
+		_ZN15cProcessManager5MyDTIC2EPKcP5CnDTImmNS3_4ATTRE                 = 0x020232FC + 1; /* cProcessManager::MyDTI::MyDTI(char const*, CnDTI*, unsigned long, unsigned long, CnDTI::ATTR) */
+		_ZNK15cProcessManager5MyDTI11newInstanceEv                          = 0x02022D28 + 1; /* cProcessManager::MyDTI::newInstance() const */
+		_ZTVN15cProcessManager5MyDTIE                                       = 0x020A4938 - 8; /* vtable for cProcessManager::MyDTI */
 
 /* cProcessManager::dummyProcess */
-
+	_ZN15cProcessManager12dummyProcessC1Ev                              = 0x02022D50 + 1; /* cProcessManager::dummyProcess::dummyProcess() */
+	_ZN15cProcessManager12dummyProcessC2Ev                              = 0x02022D50 + 1; /* cProcessManager::dummyProcess::dummyProcess() */
 	_ZN15cProcessManager12dummyProcessD0Ev                              = 0x020232B8 + 1; /* cProcessManager::dummyProcess::~dummyProcess() */
 	_ZN15cProcessManager12dummyProcessD1Ev                              = 0x020232AC + 1; /* cProcessManager::dummyProcess::~dummyProcess() */
 	_ZN15cProcessManager12dummyProcessD2Ev                              = 0x020232AC + 1; /* cProcessManager::dummyProcess::~dummyProcess() */
-	_ZN15cProcessManager12dummyProcessC1Ev                              = 0x02022D50 + 1; /* cProcessManager::dummyProcess::dummyProcess() */
 	_ZNK15cProcessManager12dummyProcess6getDTIEv                        = 0x02023298 + 1; /* cProcessManager::dummyProcess::getDTI() const */
-
+	_ZN15cProcessManager12dummyProcess3DTIE                             = 0x020C9DE8; /* cProcessManager::dummyProcess::DTI */
 	_ZTVN15cProcessManager12dummyProcessE                               = 0x020A496C - 8; /* vtable for cProcessManager::dummyProcess */
-	_ZN15cProcessManager12dummyProcess5myDTIE                           = 0x020C9DE8; /* cProcessManager::dummyProcess::myDTI */
 
-	/* GenericDTI<cProcessManager::dummyProcess> */
-		_ZN10GenericDTIIN15cProcessManager12dummyProcessEEC2EPKcP3DTImmm    = 0x02023318 + 1; /* GenericDTI<cProcessManager::dummyProcess>::GenericDTI(char const*, DTI*, unsigned long, unsigned long, unsigned long) */
-		_ZNK10GenericDTIIN15cProcessManager12dummyProcessEE9constructEv     = 0x02022D3C + 1; /* GenericDTI<cProcessManager::dummyProcess>::construct() const */
+	/* cProcessManager::dummyProcess::MyDTI */
+		_ZN15cProcessManager12dummyProcess5MyDTIC2EPKcP5CnDTImmNS4_4ATTRE   = 0x02023318 + 1; /* cProcessManager::dummyProcess::MyDTI::MyDTI(char const*, CnDTI*, unsigned long, unsigned long, CnDTI::ATTR) */
+		_ZNK15cProcessManager12dummyProcess5MyDTI11newInstanceEv            = 0x02022D3C + 1; /* cProcessManager::dummyProcess::MyDTI::newInstance() const */
+		_ZTVN15cProcessManager12dummyProcess5MyDTIE                         = 0x020A492C - 8; /* vtable for cProcessManager::dummyProcess::MyDTI */
 
-		_ZTV10GenericDTIIN15cProcessManager12dummyProcessEE                 = 0x020A492C - 8; /* vtable for GenericDTI<cProcessManager::dummyProcess> */
-
-/* cDSProcessManager */
-	_ZN17cDSProcessManager11getInstanceEv							= 0x02011264 + 1; /* cDSProcessManager::getInstance() */
-	_ZN17cDSProcessManager17getProcessManagerEm						= 0x0201123C + 1; /* cDSProcessManager::getProcessManager(unsigned long) */
-
-	_ZZN17cDSProcessManager11getInstanceEvE10myInstance				= 0x020B8AD4; /* cDSProcessManager::getInstance()::myInstance */
+/* cProcessManagerImpl */
+	_ZN19cProcessManagerImpl11getInstanceEm								= 0x0201123C + 1; /* cProcessManagerImpl::getInstance(unsigned long) */
 
 
 /* cCPACFile */
